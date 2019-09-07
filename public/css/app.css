@@ -12266,6 +12266,51 @@ a.text-dark:focus {
   box-shadow: none;
 }
 
+.navbar-search {
+  width: 350px !important;
+  border: 0;
+  background-color: #4b545c;
+}
+
+.search-form-navbar input::-webkit-input-placeholder {
+  color: #aaa !important;
+}
+
+.search-form-navbar input:-moz-placeholder {
+  /* Firefox 18- */
+  color: #aaa !important;
+}
+
+.search-form-navbar input::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #aaa !important;
+}
+
+.search-form-navbar input:-ms-input-placeholder {
+  color: #aaa !important;
+}
+
+.navbar-search:focus {
+  border: 0;
+  box-shadow: 0 0 0 0;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
 .stamp {
   color: #fff;
   background: #868e96;

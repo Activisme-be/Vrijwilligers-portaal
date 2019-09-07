@@ -11,7 +11,50 @@
 @import '~bootstrap/scss/bootstrap';
 @import "~primer-blankslate/index.scss";
 
-// Stamp partial 
+.navbar-search {
+    width: 350px !important;
+    border: 0;
+    background-color: lighten($dark, 10%);
+}
+
+.search-form-navbar input::-webkit-input-placeholder {
+    color: #aaa !important;
+}
+
+.search-form-navbar  input:-moz-placeholder { /* Firefox 18- */
+    color: #aaa !important;
+}
+
+.search-form-navbar input::-moz-placeholder {  /* Firefox 19+ */
+    color: #aaa !important;
+}
+
+.search-form-navbar input:-ms-input-placeholder {
+    color: #aaa !important;
+}
+
+.navbar-search:focus {
+    border: 0;
+    box-shadow: 0 0 0 0;
+}
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+// Stamp partial
 .stamp {
   color: #fff;
   background: #868e96;
@@ -50,7 +93,7 @@
 }
 
 .qr-2fa-code {
-  height: 175px; 
+  height: 175px;
   width: 175px;
 }
 
