@@ -48,6 +48,14 @@
                 </ul>
 
                 <ul class="navbar-nav ml-auto">
+                    @if ($currentUser->cannot('on-kiosk', auth()->user()))
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="{{ config('app.url') }}" role="button" id="teamDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fe fe-users mr-1"></i> Mijn teams
+                            </a>
+                        </li>
+                    @endif
+
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('notifications.index') }}">
                             <i class="fe fe-bell mr-1"></i>

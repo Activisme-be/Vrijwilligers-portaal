@@ -6,7 +6,7 @@
     <i class="fe fe-users mr-1 text-secondary"></i> Vrijwilligers
 </a>
 
-<a class="nav-link" href="">
+<a class="nav-link {{ active('teams.*') }}" href="{{ route('teams.index') }}">
     <i class="fe fe-list mr-1 text-secondary"></i> Teams
 </a>
 

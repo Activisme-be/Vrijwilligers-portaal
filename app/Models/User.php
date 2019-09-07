@@ -7,6 +7,7 @@ use App\Models\PasswordSecurity;
 use App\Repositories\UserRepository;
 use Cog\Laravel\Ban\Traits\Bannable;
 use Illuminate\Support\Facades\Cache;
+use Mpociot\Teamwork\Traits\UserHasTeams;
 use Spatie\Permission\Traits\HasRoles;
 use Illuminate\Notifications\Notifiable;
 use Spatie\Activitylog\Traits\CausesActivity;
@@ -18,7 +19,7 @@ use Cog\Contracts\Ban\Bannable as BannableContract;
  */
 class User extends UserRepository implements BannableContract
 {
-    use Notifiable, Bannable, HasRoles, ActivityLog, CausesActivity;
+    use UserHasTeams, Notifiable, Bannable, HasRoles, ActivityLog, CausesActivity;
 
     /**
      * The attributes that are mass assignable.
